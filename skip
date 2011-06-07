@@ -9,7 +9,7 @@ import sys
 from optparse import OptionParser
 
 def cmdline():
-    usage = "hey, like so: $ %prog infile [options]"
+    usage = ": $ %prog [options] < textfile"
     parser = OptionParser(usage)
 
     parser.add_option("-t", 
