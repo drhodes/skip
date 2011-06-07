@@ -1,0 +1,9 @@
+*~
+*.o
+ccc
+*nexe
+./ccc*
+./backup-with-rsync*
+*#
+#*#
+*.stamp

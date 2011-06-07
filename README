@@ -1,0 +1,43 @@
+a simple command line utility to skip lines from stdin
+doesn't take input filenames yet, just stdin.
+
+given a file: ./numbers.txt
+-- start
+1
+2
+3
+4
+5
+6
+7
+8
+9
+-- EOF
+
+
+me@computer$ skip --take 1 --drop 3 < numbers
+1
+5
+9
+
+
+me@computer$ skip < numbers  # no args defaults to cat behavior
+1
+2
+3
+4
+5
+6
+7
+8
+9
+
+
+me@computer$ skip -t 2 -d 2 < numbers
+1
+2
+5
+6
+9
+
+
